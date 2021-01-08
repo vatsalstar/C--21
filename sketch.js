@@ -39,7 +39,7 @@ car.shapeColor = "yellow";
 
 }
 
-if(hasCollided(bullet,wall){
+if(hasCollided(bullet,wall)){
 bullet.velocityX=0;
 var damage = 0.5 * weight * speed* speed/(thickness *thickness *thickness);
 
@@ -59,8 +59,8 @@ drawSprites();
 
 function hasCollided(bullet,wall){
 bullet.RightEdge = bullet.X +bullet.width;
-wall.LeftEdge = wall.X;
-if (bulletRightEdge>=wall.LeftEdge)
+wall.LeftEdge = wall.x;
+if (bullet.RightEdge>=wall.LeftEdge)
 {
   return true
 }
